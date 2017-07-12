@@ -22,6 +22,8 @@
 		7BFD883F1F13B35F002D2C87 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD883E1F13B35F002D2C87 /* GameScene.swift */; };
 		7BFD884D1F13EECB002D2C87 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD884C1F13EECB002D2C87 /* CharactersViewController.swift */; };
 		7BFD884F1F16CF01002D2C87 /* Obstacle3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD884E1F16CF01002D2C87 /* Obstacle3.sks */; };
+		7BFD88511F16D453002D2C87 /* LevelTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD88501F16D453002D2C87 /* LevelTwoViewController.swift */; };
+		7BFD88531F16D7BF002D2C87 /* GameScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD88521F16D7BF002D2C87 /* GameScene2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		7BFD883E1F13B35F002D2C87 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		7BFD884C1F13EECB002D2C87 /* CharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		7BFD884E1F16CF01002D2C87 /* Obstacle3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle3.sks; sourceTree = "<group>"; };
+		7BFD88501F16D453002D2C87 /* LevelTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelTwoViewController.swift; sourceTree = "<group>"; };
+		7BFD88521F16D7BF002D2C87 /* GameScene2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,8 @@
 				562F95301D866E8500493C9C /* Obstacle2.sks */,
 				7BFD884E1F16CF01002D2C87 /* Obstacle3.sks */,
 				7BFD883E1F13B35F002D2C87 /* GameScene.swift */,
+				7BFD88501F16D453002D2C87 /* LevelTwoViewController.swift */,
+				7BFD88521F16D7BF002D2C87 /* GameScene2.swift */,
 				56C9AA451D7A5DA4007A2865 /* GameViewController.swift */,
 				7BFD884C1F13EECB002D2C87 /* CharactersViewController.swift */,
 				56C9AA471D7A5DA4007A2865 /* Main.storyboard */,
@@ -290,7 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BFD884D1F13EECB002D2C87 /* CharactersViewController.swift in Sources */,
+				7BFD88511F16D453002D2C87 /* LevelTwoViewController.swift in Sources */,
 				56C9AA461D7A5DA4007A2865 /* GameViewController.swift in Sources */,
+				7BFD88531F16D7BF002D2C87 /* GameScene2.swift in Sources */,
 				7BFD883F1F13B35F002D2C87 /* GameScene.swift in Sources */,
 				56C9AA401D7A5DA4007A2865 /* AppDelegate.swift in Sources */,
 			);
