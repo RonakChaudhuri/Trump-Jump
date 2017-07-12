@@ -11,6 +11,8 @@ import SpriteKit
 
 class GameViewController: UIViewController {
 
+    
+    var character = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,10 +22,10 @@ class GameViewController: UIViewController {
             skView.showsFPS = false
             skView.showsNodeCount = false
             
-            /* Sprite Kit applies additional optimizations to improve rendering performance */
+            // Sprite Kit applies additional optimizations to improve rendering performance
             skView.ignoresSiblingOrder = true
             
-            /* Set the scale mode to scale to fit the window */
+            // Set the scale mode to scale to fit the window
             scene.scaleMode = .aspectFill
             
             skView.presentScene(scene)
@@ -50,4 +52,5 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden : Bool {
         return true
     }
-}
+    
+    }
