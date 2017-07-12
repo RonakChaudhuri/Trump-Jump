@@ -48,8 +48,8 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
         //print(character)
         
         
-        objTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(GameScene.pickobj), userInfo: nil, repeats: true)
-        scoreTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameScene.addScore), userInfo: nil, repeats: true)
+        objTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(GameScene2.pickobj), userInfo: nil, repeats: true)
+        scoreTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameScene2.addScore), userInfo: nil, repeats: true)
         
     }
     
@@ -172,7 +172,7 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
     
     func restartScene()
     {
-        let scene = GameScene(fileNamed: "GameScene")
+        let scene = GameScene2(fileNamed: "GameScene2")
         let transition = SKTransition.crossFade(withDuration: 0.5)
         let view = self.view as SKView!
         scene?.scaleMode = SKSceneScaleMode.aspectFill

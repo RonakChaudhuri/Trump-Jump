@@ -8,8 +8,7 @@
 
 import UIKit
 import SpriteKit
-class LevelTwoViewController: UIViewController
-{
+class LevelTwoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
