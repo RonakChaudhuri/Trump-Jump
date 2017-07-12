@@ -22,6 +22,9 @@
 		7BFD883F1F13B35F002D2C87 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD883E1F13B35F002D2C87 /* GameScene.swift */; };
 		7BFD884D1F13EECB002D2C87 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD884C1F13EECB002D2C87 /* CharactersViewController.swift */; };
 		7BFD884F1F16CF01002D2C87 /* Obstacle3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD884E1F16CF01002D2C87 /* Obstacle3.sks */; };
+		9C16AB441F16D4BA000A5C27 /* Obstacle4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9C16AB431F16D4BA000A5C27 /* Obstacle4.sks */; };
+		9C16AB4A1F16D75D000A5C27 /* Obstacle6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9C16AB491F16D75D000A5C27 /* Obstacle6.sks */; };
+		9C16AB4C1F16D826000A5C27 /* Obstacle5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9C16AB4B1F16D826000A5C27 /* Obstacle5.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		7BFD883E1F13B35F002D2C87 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		7BFD884C1F13EECB002D2C87 /* CharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		7BFD884E1F16CF01002D2C87 /* Obstacle3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle3.sks; sourceTree = "<group>"; };
+		9C16AB431F16D4BA000A5C27 /* Obstacle4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Obstacle4.sks; path = "../../../GeoDash-master/GeoDash/Obstacle4.sks"; sourceTree = "<group>"; };
+		9C16AB491F16D75D000A5C27 /* Obstacle6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Obstacle6.sks; path = "../../../GeoDash-master/GeoDash/Obstacle6.sks"; sourceTree = "<group>"; };
+		9C16AB4B1F16D826000A5C27 /* Obstacle5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Obstacle5.sks; path = "../../../GeoDash-master/GeoDash/Obstacle5.sks"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 				562F95321D866E8C00493C9C /* Obstacle1.sks */,
 				562F95301D866E8500493C9C /* Obstacle2.sks */,
 				7BFD884E1F16CF01002D2C87 /* Obstacle3.sks */,
+				9C16AB431F16D4BA000A5C27 /* Obstacle4.sks */,
+				9C16AB4B1F16D826000A5C27 /* Obstacle5.sks */,
+				9C16AB491F16D75D000A5C27 /* Obstacle6.sks */,
 				7BFD883E1F13B35F002D2C87 /* GameScene.swift */,
 				56C9AA451D7A5DA4007A2865 /* GameViewController.swift */,
 				7BFD884C1F13EECB002D2C87 /* CharactersViewController.swift */,
@@ -259,10 +268,13 @@
 				562F95311D866E8500493C9C /* Obstacle2.sks in Resources */,
 				56C9AA421D7A5DA4007A2865 /* GameScene.sks in Resources */,
 				562F95331D866E8C00493C9C /* Obstacle1.sks in Resources */,
+				9C16AB4A1F16D75D000A5C27 /* Obstacle6.sks in Resources */,
 				7BFD884F1F16CF01002D2C87 /* Obstacle3.sks in Resources */,
 				56C9AA4E1D7A5DA4007A2865 /* LaunchScreen.storyboard in Resources */,
+				9C16AB4C1F16D826000A5C27 /* Obstacle5.sks in Resources */,
 				56057C921D8683D40096CE2C /* FlappyFont.TTF in Resources */,
 				56C9AA4B1D7A5DA4007A2865 /* Assets.xcassets in Resources */,
+				9C16AB441F16D4BA000A5C27 /* Obstacle4.sks in Resources */,
 				7BFD88311F100A71002D2C87 /* whiteBox.png in Resources */,
 				56C9AA491D7A5DA4007A2865 /* Main.storyboard in Resources */,
 			);
