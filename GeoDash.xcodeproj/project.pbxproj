@@ -14,17 +14,26 @@
 		56C9AA421D7A5DA4007A2865 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56C9AA411D7A5DA4007A2865 /* GameScene.sks */; };
 		56C9AA461D7A5DA4007A2865 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9AA451D7A5DA4007A2865 /* GameViewController.swift */; };
 		56C9AA491D7A5DA4007A2865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C9AA471D7A5DA4007A2865 /* Main.storyboard */; };
-		56C9AA4B1D7A5DA4007A2865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C9AA4A1D7A5DA4007A2865 /* Assets.xcassets */; };
 		56C9AA4E1D7A5DA4007A2865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C9AA4C1D7A5DA4007A2865 /* LaunchScreen.storyboard */; };
 		56C9AA591D7A5DA4007A2865 /* GeoDashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9AA581D7A5DA4007A2865 /* GeoDashTests.swift */; };
 		56C9AA641D7A5DA4007A2865 /* GeoDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9AA631D7A5DA4007A2865 /* GeoDashUITests.swift */; };
 		7BFD88311F100A71002D2C87 /* whiteBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD88301F100A70002D2C87 /* whiteBox.png */; };
 		7BFD883F1F13B35F002D2C87 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD883E1F13B35F002D2C87 /* GameScene.swift */; };
-		7BFD884D1F13EECB002D2C87 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD884C1F13EECB002D2C87 /* CharactersViewController.swift */; };
 		7BFD884F1F16CF01002D2C87 /* Obstacle3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD884E1F16CF01002D2C87 /* Obstacle3.sks */; };
 		7BFD88511F16D453002D2C87 /* LevelTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD88501F16D453002D2C87 /* LevelTwoViewController.swift */; };
 		7BFD88531F16D7BF002D2C87 /* GameScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD88521F16D7BF002D2C87 /* GameScene2.swift */; };
-		9C16AB4E1F16DB8B000A5C27 /* Obstacle5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9C16AB4D1F16DB8B000A5C27 /* Obstacle5.sks */; };
+		7BFD88571F170F17002D2C87 /* GameScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD88561F170F17002D2C87 /* GameScene2.sks */; };
+		7BFD88591F17AB6D002D2C87 /* Obstacle4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD88581F17AB6D002D2C87 /* Obstacle4.sks */; };
+		7BFD885B1F17BDEB002D2C87 /* Obstacle5.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD885A1F17BDEB002D2C87 /* Obstacle5.sks */; };
+		7BFD885D1F17C060002D2C87 /* Obstacle6.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD885C1F17C060002D2C87 /* Obstacle6.sks */; };
+		7BFD885F1F1925F2002D2C87 /* Obstacle7.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD885E1F1925F2002D2C87 /* Obstacle7.sks */; };
+		7BFD88611F192A44002D2C87 /* Obstacle8.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD88601F192A44002D2C87 /* Obstacle8.sks */; };
+		7BFD88631F192CF0002D2C87 /* Obstacle9.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD88621F192CF0002D2C87 /* Obstacle9.sks */; };
+		7BFD88651F1933A8002D2C87 /* LevelThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD88641F1933A8002D2C87 /* LevelThreeViewController.swift */; };
+		7BFD88671F1933E2002D2C87 /* GameScene3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFD88661F1933E2002D2C87 /* GameScene3.swift */; };
+		7BFD88691F193550002D2C87 /* GameScene3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD88681F193550002D2C87 /* GameScene3.sks */; };
+		7BFD88771F1D4CC6002D2C87 /* Presidents.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD88761F1D4CC6002D2C87 /* Presidents.mp3 */; };
+		7BFD88791F1D7CCC002D2C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFD88781F1D7CCC002D2C87 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +62,6 @@
 		56C9AA411D7A5DA4007A2865 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		56C9AA451D7A5DA4007A2865 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		56C9AA481D7A5DA4007A2865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		56C9AA4A1D7A5DA4007A2865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56C9AA4D1D7A5DA4007A2865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56C9AA4F1D7A5DA4007A2865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C9AA541D7A5DA4007A2865 /* GeoDashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoDashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,11 +72,21 @@
 		56C9AA651D7A5DA5007A2865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BFD88301F100A70002D2C87 /* whiteBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteBox.png; path = ../GeoDash/whiteBox.png; sourceTree = "<group>"; };
 		7BFD883E1F13B35F002D2C87 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		7BFD884C1F13EECB002D2C87 /* CharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		7BFD884E1F16CF01002D2C87 /* Obstacle3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle3.sks; sourceTree = "<group>"; };
 		7BFD88501F16D453002D2C87 /* LevelTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelTwoViewController.swift; sourceTree = "<group>"; };
 		7BFD88521F16D7BF002D2C87 /* GameScene2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene2.swift; sourceTree = "<group>"; };
-		9C16AB4D1F16DB8B000A5C27 /* Obstacle5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = Obstacle5.sks; path = "../../../GeoDash-master/GeoDash/Obstacle5.sks"; sourceTree = "<group>"; };
+		7BFD88561F170F17002D2C87 /* GameScene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene2.sks; sourceTree = "<group>"; };
+		7BFD88581F17AB6D002D2C87 /* Obstacle4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle4.sks; sourceTree = "<group>"; };
+		7BFD885A1F17BDEB002D2C87 /* Obstacle5.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle5.sks; sourceTree = "<group>"; };
+		7BFD885C1F17C060002D2C87 /* Obstacle6.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle6.sks; sourceTree = "<group>"; };
+		7BFD885E1F1925F2002D2C87 /* Obstacle7.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle7.sks; sourceTree = "<group>"; };
+		7BFD88601F192A44002D2C87 /* Obstacle8.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle8.sks; sourceTree = "<group>"; };
+		7BFD88621F192CF0002D2C87 /* Obstacle9.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle9.sks; sourceTree = "<group>"; };
+		7BFD88641F1933A8002D2C87 /* LevelThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelThreeViewController.swift; sourceTree = "<group>"; };
+		7BFD88661F1933E2002D2C87 /* GameScene3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene3.swift; sourceTree = "<group>"; };
+		7BFD88681F193550002D2C87 /* GameScene3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene3.sks; sourceTree = "<group>"; };
+		7BFD88761F1D4CC6002D2C87 /* Presidents.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Presidents.mp3; sourceTree = "<group>"; };
+		7BFD88781F1D7CCC002D2C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +121,7 @@
 				56C9AA571D7A5DA4007A2865 /* GeoDashTests */,
 				56C9AA621D7A5DA4007A2865 /* GeoDashUITests */,
 				56C9AA3D1D7A5DA4007A2865 /* Products */,
+				7BFD88761F1D4CC6002D2C87 /* Presidents.mp3 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,18 +140,26 @@
 			children = (
 				56C9AA3F1D7A5DA4007A2865 /* AppDelegate.swift */,
 				56C9AA411D7A5DA4007A2865 /* GameScene.sks */,
+				7BFD883E1F13B35F002D2C87 /* GameScene.swift */,
+				56C9AA451D7A5DA4007A2865 /* GameViewController.swift */,
 				562F95321D866E8C00493C9C /* Obstacle1.sks */,
 				562F95301D866E8500493C9C /* Obstacle2.sks */,
 				7BFD884E1F16CF01002D2C87 /* Obstacle3.sks */,
-				9C16AB4D1F16DB8B000A5C27 /* Obstacle5.sks */,
-				7BFD883E1F13B35F002D2C87 /* GameScene.swift */,
+				7BFD88581F17AB6D002D2C87 /* Obstacle4.sks */,
+				7BFD885A1F17BDEB002D2C87 /* Obstacle5.sks */,
+				7BFD885C1F17C060002D2C87 /* Obstacle6.sks */,
+				7BFD885E1F1925F2002D2C87 /* Obstacle7.sks */,
+				7BFD88601F192A44002D2C87 /* Obstacle8.sks */,
+				7BFD88621F192CF0002D2C87 /* Obstacle9.sks */,
 				7BFD88501F16D453002D2C87 /* LevelTwoViewController.swift */,
+				7BFD88561F170F17002D2C87 /* GameScene2.sks */,
 				7BFD88521F16D7BF002D2C87 /* GameScene2.swift */,
-				56C9AA451D7A5DA4007A2865 /* GameViewController.swift */,
-				7BFD884C1F13EECB002D2C87 /* CharactersViewController.swift */,
 				56C9AA471D7A5DA4007A2865 /* Main.storyboard */,
-				56C9AA4A1D7A5DA4007A2865 /* Assets.xcassets */,
+				7BFD88641F1933A8002D2C87 /* LevelThreeViewController.swift */,
+				7BFD88661F1933E2002D2C87 /* GameScene3.swift */,
+				7BFD88681F193550002D2C87 /* GameScene3.sks */,
 				56C9AA4C1D7A5DA4007A2865 /* LaunchScreen.storyboard */,
+				7BFD88781F1D7CCC002D2C87 /* Assets.xcassets */,
 				56C9AA4F1D7A5DA4007A2865 /* Info.plist */,
 			);
 			path = GeoDash;
@@ -265,15 +292,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C16AB4E1F16DB8B000A5C27 /* Obstacle5.sks in Resources */,
+				7BFD88591F17AB6D002D2C87 /* Obstacle4.sks in Resources */,
 				562F95311D866E8500493C9C /* Obstacle2.sks in Resources */,
+				7BFD88631F192CF0002D2C87 /* Obstacle9.sks in Resources */,
 				56C9AA421D7A5DA4007A2865 /* GameScene.sks in Resources */,
 				562F95331D866E8C00493C9C /* Obstacle1.sks in Resources */,
 				7BFD884F1F16CF01002D2C87 /* Obstacle3.sks in Resources */,
+				7BFD885D1F17C060002D2C87 /* Obstacle6.sks in Resources */,
 				56C9AA4E1D7A5DA4007A2865 /* LaunchScreen.storyboard in Resources */,
+				7BFD88611F192A44002D2C87 /* Obstacle8.sks in Resources */,
+				7BFD88691F193550002D2C87 /* GameScene3.sks in Resources */,
+				7BFD885B1F17BDEB002D2C87 /* Obstacle5.sks in Resources */,
 				56057C921D8683D40096CE2C /* FlappyFont.TTF in Resources */,
-				56C9AA4B1D7A5DA4007A2865 /* Assets.xcassets in Resources */,
+				7BFD88571F170F17002D2C87 /* GameScene2.sks in Resources */,
+				7BFD88771F1D4CC6002D2C87 /* Presidents.mp3 in Resources */,
 				7BFD88311F100A71002D2C87 /* whiteBox.png in Resources */,
+				7BFD885F1F1925F2002D2C87 /* Obstacle7.sks in Resources */,
+				7BFD88791F1D7CCC002D2C87 /* Assets.xcassets in Resources */,
 				56C9AA491D7A5DA4007A2865 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +334,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BFD884D1F13EECB002D2C87 /* CharactersViewController.swift in Sources */,
+				7BFD88671F1933E2002D2C87 /* GameScene3.swift in Sources */,
+				7BFD88651F1933A8002D2C87 /* LevelThreeViewController.swift in Sources */,
 				7BFD88511F16D453002D2C87 /* LevelTwoViewController.swift in Sources */,
 				56C9AA461D7A5DA4007A2865 /* GameViewController.swift in Sources */,
 				7BFD88531F16D7BF002D2C87 /* GameScene2.swift in Sources */,

@@ -1,16 +1,14 @@
 //
-//  GameScene.swift
+//  GameScene3.swift
 //  GeoDash
 //
-//  Created by Ronak Chaudhuri on 7/2/17.
-//  Copyright (c) 2017 Ronak Chaudhuri. All rights reserved.
+//  Created by Ronak Chaudhuri on 7/14/17.
+//  Copyright © 2017 Ronak Chaudhuri. All rights reserved.
 //
 
+import UIKit
 import SpriteKit
-import AVFoundation
-
-
-class GameScene: SKScene, SKPhysicsContactDelegate
+class GameScene3: SKScene, SKPhysicsContactDelegate
 {
     
     var objTimer = Timer()  //For when obstacles appear
@@ -26,15 +24,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     var scoreLabel = SKLabelNode()
     var highScoreLabel = SKLabelNode()
     var canRestart = Bool()
-    var sound: SKAction!
     
     override func didMove(to view: SKView)
     {
        
+        
+        
         scoreLabel = childNode(withName: "scoreLabel") as! SKLabelNode
         highScoreLabel = childNode(withName: "highScoreLabel") as! SKLabelNode
         score = 0
-        let def = UserDefaults.standard
+        let def = UserDefaults.standard       // Sets Default HighScore
         if def.integer(forKey: "highScore") != 0
         {
             highScore = def.integer(forKey: "highScore")
@@ -47,19 +46,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         self.physicsWorld.contactDelegate = self
         self.physicsWorld.gravity = CGVector(dx: 0, dy: -30)
         trump = scene?.childNode(withName: "person") as! SKSpriteNode
-       
-     
+        
+        
+        
         
         pickobj()
-        objTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(GameScene.pickobj), userInfo: nil, repeats: true)
-        scoreTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameScene.addScore), userInfo: nil, repeats: true)
+        objTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(GameScene3.pickobj), userInfo: nil, repeats: true)
+        scoreTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameScene3.addScore), userInfo: nil, repeats: true)
+        // timer for Score and appearance of obstacles
         
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
-      
-  
+        
         isTouching = true
         
         for touch in touches
@@ -67,36 +67,35 @@ class GameScene: SKScene, SKPhysicsContactDelegate
             let location = touch.location(in: self)
             let node = atPoint(location)
             
-
-            if node.name == "retryBtn"
+            if node.name == "retryBtn" //pops retry button to reset
             {
                 restartScene()
+                
             }
             
         }
         
         jump()
-       
+        
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
     {
-        
         isTouching = false
     }
     
     func didBegin(_ contact: SKPhysicsContact)
     {
-       
         let a = contact.bodyA.node
         let b = contact.bodyB.node
         
         let result = (a?.physicsBody?.categoryBitMask)! | (b?.physicsBody?.categoryBitMask)!
         
         if result == 3 || result == 6
+            //contact procedures to match the requirements with contact to die
         {
             if self.physicsWorld.body(at: CGPoint(x: trump.position.x - 49, y: trump.position.y - 51)) == nil &&
-            self.physicsWorld.body(at: CGPoint(x: trump.position.x + 49, y: trump.position.y - 51)) == nil
+                self.physicsWorld.body(at: CGPoint(x: trump.position.x + 49, y: trump.position.y - 51)) == nil
             {
                 // No body directly under the trump, cannot jump
                 print("test")
@@ -133,7 +132,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     func pickobj()
     {
         
-        ObsArray = ["Obstacle1","Obstacle2", "Obstacle3"]
+        ObsArray = ["Obstacle7","Obstacle8", "Obstacle9"]
+        //All sks files for the obstacles
         
         let randomNumber = arc4random() % UInt32(ObsArray.count)
         
@@ -141,7 +141,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         
     }
     
-    func addobj(_ obsName: String)
+    func addobj(_ obsName: String)  // adding obstacles to the view
     {
         
         let obj = Bundle.main.path(forResource: obsName, ofType: "sks")
@@ -162,7 +162,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate
     func die()
     {
         
-        
         scoreTimer.invalidate()
         let retryButton = SKSpriteNode(imageNamed: "retry")
         retryButton.name = "retryBtn"
@@ -177,12 +176,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         self.addChild(retryButton)
         retryButton.run(SKAction.sequence([wait, fadeIn]))
         
+        
     }
+    
     func restartScene()
     {
-        
-        canRestart = false
-        let scene = GameScene(fileNamed: "GameScene")
+        let scene = GameScene3(fileNamed: "GameScene3")
         let transition = SKTransition.crossFade(withDuration: 0.5)
         let view = self.view as SKView!
         scene?.scaleMode = SKSceneScaleMode.aspectFill
@@ -214,17 +213,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         if score >= 35 && score < 50
         {
             trump.texture = SKTexture(imageNamed: "Westbrook")
-
+            
         }
         if score >= 50 && score < 75
         {
             trump.texture = SKTexture(imageNamed: "Bernie")
-
+            
         }
         if score >= 75 && score < 90
         {
-            trump.texture = SKTexture(imageNamed: "Jordan")
-
+            trump.texture = SKTexture(imageNamed: "Kid")
+            
         }
         if score >= 90 && score < 100
         {
@@ -246,10 +245,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate
         scoreLabel.text = "\(score)"
         highScoreLabel.text = "Highscore: \(highScore)"
     }
-   
+    
     override func update(_ currentTime: TimeInterval)
     {
-        /* Called before each frame is rendered */
+        // Called before each frame is rendered //
         
         if trump.position.x <= 0 - trump.frame.width / 2
         {

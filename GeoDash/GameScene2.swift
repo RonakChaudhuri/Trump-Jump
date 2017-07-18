@@ -3,7 +3,7 @@
 //  GeoDash
 //
 //  Created by Ronak Chaudhuri on 7/12/17.
-//  Copyright © 2017 Wenzhe. All rights reserved.
+//  Copyright © 2017 Ronak Chaudhuri. All rights reserved.
 //
 
 import UIKit
@@ -23,14 +23,15 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
     var scoreTimer = Timer()
     var scoreLabel = SKLabelNode()
     var highScoreLabel = SKLabelNode()
-    
-    
+    var canRestart = Bool()
     override func didMove(to view: SKView)
     {
+
+        
         scoreLabel = childNode(withName: "scoreLabel") as! SKLabelNode
         highScoreLabel = childNode(withName: "highScoreLabel") as! SKLabelNode
         score = 0
-        let def = UserDefaults.standard
+        let def = UserDefaults.standard       // Sets Default HighScore
         if def.integer(forKey: "highScore") != 0
         {
             highScore = def.integer(forKey: "highScore")
@@ -44,12 +45,13 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
         self.physicsWorld.gravity = CGVector(dx: 0, dy: -30)
         trump = scene?.childNode(withName: "person") as! SKSpriteNode
         
-        //trump.texture = SKTexture(imageNamed: character)
-        //print(character)
         
         
+        
+        pickobj()
         objTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(GameScene2.pickobj), userInfo: nil, repeats: true)
         scoreTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(GameScene2.addScore), userInfo: nil, repeats: true)
+        // timer for Score and appearance of obstacles
         
     }
     
@@ -63,7 +65,7 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
             let location = touch.location(in: self)
             let node = atPoint(location)
             
-            if node.name == "retryBtn"
+            if node.name == "retryBtn"   //pops retry button to reset 
             {
                 restartScene()
             }
@@ -87,6 +89,7 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
         let result = (a?.physicsBody?.categoryBitMask)! | (b?.physicsBody?.categoryBitMask)!
         
         if result == 3 || result == 6
+    //contact procedures to match the requirements with contact to die
         {
             if self.physicsWorld.body(at: CGPoint(x: trump.position.x - 49, y: trump.position.y - 51)) == nil &&
                 self.physicsWorld.body(at: CGPoint(x: trump.position.x + 49, y: trump.position.y - 51)) == nil
@@ -118,7 +121,7 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
             if isJumping == false
             {
                 isJumping = true
-                trump.physicsBody?.applyImpulse(CGVector(dx: 0,dy: 700))
+                trump.physicsBody?.applyImpulse(CGVector(dx: 0,dy: 400))
             }
         }
     }
@@ -127,6 +130,7 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
     {
         
         ObsArray = ["Obstacle4","Obstacle5", "Obstacle6"]
+        //All sks files for the obstacles
         
         let randomNumber = arc4random() % UInt32(ObsArray.count)
         
@@ -134,7 +138,7 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
         
     }
     
-    func addobj(_ obsName: String)
+    func addobj(_ obsName: String)  // adding obstacles to the view
     {
         
         let obj = Bundle.main.path(forResource: obsName, ofType: "sks")
@@ -227,7 +231,7 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
             let dismissButton = UIAlertAction(title: "Dismiss", style: .default, handler: nil)
             myAlert.addAction(dismissButton)
             self.view?.window?.rootViewController?.present(myAlert, animated: true, completion: nil)
-            score == 100
+            stop()
         }
     }
     
@@ -239,7 +243,7 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
     
     override func update(_ currentTime: TimeInterval)
     {
-        /* Called before each frame is rendered */
+        // Called before each frame is rendered //
         
         if trump.position.x <= 0 - trump.frame.width / 2
         {
@@ -252,7 +256,15 @@ class GameScene2: SKScene, SKPhysicsContactDelegate
             objTimer.invalidate()
         }
     }
-    
+    func stop()
+    {
+        for node in self.children
+        {
+            node.removeAllActions()
+            scoreTimer.invalidate()
+            objTimer.invalidate()
+        }
+    }
 }
 
 

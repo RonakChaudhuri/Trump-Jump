@@ -1,19 +1,20 @@
 //
-//  LevelTwoViewController.swift
+//  LevelThreeViewController.swift
 //  GeoDash
 //
-//  Created by Ronak Chaudhuri on 7/12/17.
+//  Created by Ronak Chaudhuri on 7/14/17.
 //  Copyright © 2017 Ronak Chaudhuri. All rights reserved.
 //
 
 import UIKit
 import SpriteKit
-class LevelTwoViewController: UIViewController  {
-
+class LevelThreeViewController: UIViewController {
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let scene = GameScene2(fileNamed:"GameScene2") {
+        if let scene = GameScene3(fileNamed:"GameScene3") {
             // Configure the view.
             let skView = self.view as! SKView
             skView.showsFPS = false
@@ -49,7 +50,5 @@ class LevelTwoViewController: UIViewController  {
     override var prefersStatusBarHidden : Bool {
         return true
     }
-
- 
-
+    
 }
